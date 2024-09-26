@@ -5,7 +5,7 @@ import {
     createGapScoreOffset,
     calcMatrixValues,
     trackBack
-} from './NeedlemanWunschalgorithm';
+} from './NeedlemanWunsch.js';
 
 const argv = minimist(process.argv.slice(2));
 
