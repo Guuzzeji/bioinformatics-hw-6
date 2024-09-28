@@ -2,3 +2,6 @@ report.md
 *.pdf
 notes.md
 assets/
+
+# Mac
+.DS_Store
