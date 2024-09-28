@@ -5,8 +5,8 @@ from Bio import Align
 aligner = Align.PairwiseAligner(match_score=1.0)
 
 # Create sequences to compare
-target = sys.argv[1] | "GATTACA"
-query = sys.argv[2] | "GCATGCU"
+target = sys.argv[1] if len(sys.argv) != 1 else "GATTACA" 
+query = sys.argv[2] if len(sys.argv) != 1 else  "GCATGCU"
 
 # Compare sequences and get score
 score = aligner.score(target, query)
@@ -17,4 +17,4 @@ print("Alignment for " + target + " " + query + "")
 for alignment in alignments:
     print(alignment)
 
-print("Alignment Score --> " + score)
+print("Alignment Score --> " + str(score))
