@@ -2,7 +2,7 @@ import sys
 from Bio import Align
 
 # Create aligner
-aligner = Align.PairwiseAligner(match_score=1.0)
+aligner = Align.PairwiseAligner(match_score=1.0, gap_score=-1.0, mismatch_score=-1.0)
 
 # Create sequences to compare
 target = sys.argv[1] if len(sys.argv) != 1 else "GATTACA" 
