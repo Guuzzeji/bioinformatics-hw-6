@@ -2,6 +2,9 @@
   "name": "needle_wun_algorithm",
   "module": "main.js",
   "type": "module",
+  "scripts": {
+    "example": "bun run main.js --seq-1 GATTACA --seq-2 GCATGCU"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
